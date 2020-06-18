@@ -3,7 +3,7 @@
 mb:
   pipe:
     queue:
-      type: "VM"
+      type: "JMS"
 
 #Message Broker JMS Queue with AcitveMQ Properties
     jms:
