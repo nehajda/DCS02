@@ -2,6 +2,5 @@
 
 # API Id needed to connect to API Manager.
 
-api:
-  manager:
+api:  
     id: "0000"
