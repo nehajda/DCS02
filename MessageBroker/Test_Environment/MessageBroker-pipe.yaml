@@ -8,10 +8,10 @@ mb:
 #Message Broker JMS Queue with AcitveMQ Properties
     jms:
       queueName: "MB_PIPE"
-      brokerURL: "failover://tcp://In2npdvdcssv16:61616"
-      maxConnections: "5"
-      concurrentConsumers: "3"
+      brokerURL: "failover:tcp://in2npdvdcssv16:61616"
+      maxConnections: "30"
+      concurrentConsumers: "30"
       initialRedeliveryDelay: "20000"
       redeliveryDelay: "20000"
       sessionCacheSize: "100"
-      maximumRedeliveries: "5"
+      maximumRedeliveries: "-1"
