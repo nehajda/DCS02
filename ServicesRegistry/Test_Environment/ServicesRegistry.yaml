@@ -15,6 +15,7 @@ server:
     tls:
       keyStore:
         path: "keystore.jks"
+        key:
       trustStore:
         path: "truststore.jks"
         

@@ -10,9 +10,8 @@ receiverMappings:
   service: 'ACK.GLOBAL'
 - receiver: 'LOC.*'
   service: 'WMA'
-  
 jmbs:
-- JMB
+- JMB1
 services:
 - TMA
 - HOST.GLOBAL
