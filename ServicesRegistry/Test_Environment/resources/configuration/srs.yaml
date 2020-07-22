@@ -13,6 +13,7 @@ receiverMappings:
 jmbs:
 - JMB1
 services:
+- LCT.GLOBAL
 - TMA
 - WMA.EAST
 - WMA.WEST
