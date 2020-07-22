@@ -1,5 +1,7 @@
 !srs-configuration-v1
 receiverMappings:
+- receiver: 'TMS.GLOBAL'
+  service: 'TMA.GLOBAL'
 - receiver: 'WMA.WEST.2'
   service: 'WMA.WEST'
   enabled: false
