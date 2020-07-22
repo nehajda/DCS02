@@ -67,6 +67,8 @@ outbound:
   responses:
   - message: 'GS1:transportInstructionMessage:GS1_JDA 2017.2.0'
     flow: 'flow-GS1-transportInstructionMessage'
+  - message: 'GS1:transportChainMessage:GS1_JDA 2020.1.0.1'
+    flow: 'flow-GS1-transportChainMessage'
   - message: 'GS1:transportLoadMessage:GS1_JDA 2019.1.1'
     flow: 'flow-GS1-transportLoadMessage'
   - message: 'GS1:transportLoadMessage:GS1_JDA 2019.1.0'
