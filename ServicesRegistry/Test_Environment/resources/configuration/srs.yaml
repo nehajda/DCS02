@@ -2,11 +2,14 @@
 receiverMappings:
 - receiver: 'TMS.GLOBAL'
   service: 'TMA'
-- receiver: 'WMA.WEST.2'
-  service: 'WMA.WEST'
-  enabled: false
-- receiver: 'WMA.WEST.*'
-  service: 'WMA.WEST'
+- receiver: 'HOST.GLOBAL'
+  service: 'HOST.GLOBAL'
+- receiver: 'OMS.GLOBAL'
+  service: 'OMS.GLOBAL'
+- receiver: 'ACK.*'
+  service: 'ACK.GLOBAL'
+- receiver: 'LOC.*'
+  service: 'WMA'
 - receiver: 'LCT.GLOBAL'
   service: 'LCT.GLOBAL'
   
@@ -15,9 +18,10 @@ jmbs:
 services:
 - LCT.GLOBAL
 - TMA
-- WMA.EAST
-- WMA.WEST
-- WMA.SOUTH
+- HOST.GLOBAL
+- OMS.GLOBAL
+- ACK.GLOBAL
+- WMA
 - AUDIT
 
 
