@@ -7,6 +7,9 @@ receiverMappings:
   enabled: false
 - receiver: 'WMA.WEST.*'
   service: 'WMA.WEST'
+- receiver: 'LCT.GLOBAL'
+  service: 'LCT.GLOBAL'
+  
 jmbs:
 - JMB1
 services:
