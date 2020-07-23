@@ -44,7 +44,16 @@ outboundEndpoints:
     parameters:
     - name: "queue"
       value: "MB-OMS"
+- name: LCT
+  flow:
+    name: jmsOutboundFlow
+    parameters:
+    - name: "queue"
+      value: "MB-LCT"
 outboundMappings:
+  - receiver: 'LCT.GLOBAL'
+    request: '*:*:*'
+    outboundEndpoint: 'LCT'
   - receiver: 'HOST.GLOBAL'
     request: '*:*:*'
     outboundEndpoint: 'HOST'
