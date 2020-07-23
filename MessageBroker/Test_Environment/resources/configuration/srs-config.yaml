@@ -50,7 +50,16 @@ outboundEndpoints:
     parameters:
     - name: "queue"
       value: "MB-LCT"
+- name: AUDIT
+  flow:
+    name: jmsOutboundFlow
+    parameters:
+    - name: "queue"
+      value: "AUDIT"
 outboundMappings:
+  - receiver: 'AUDIT'
+    request: '*:*:*'
+    outboundEndpoint: 'AUDIT'
   - receiver: 'LCT.GLOBAL'
     request: '*:*:*'
     outboundEndpoint: 'LCT'
